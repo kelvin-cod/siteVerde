@@ -1,7 +1,18 @@
 <nav
-  class="navbar navbar-expand-lg navbar-light bg-info text-white navbar-inverse"
+  class="navbar navbar-expand-lg
+  navbar-light bg-success
+  text-white navbar-inverse
+  fixed-top"
 >
-  <a class="navbar-brand" href="#">Verde</a>
+  <a class="navbar-brand text-white" href="#">
+    Verde
+    <img
+      src="../../../assets/tree.png"
+      width="30"
+      height="30"
+      class="d-inline-block align-top"
+      alt=""
+  /></a>
   <button
     class="navbar-toggler"
     type="button"
@@ -15,13 +26,13 @@
   </button>
   <div class="collapse navbar-collapse " id="navbarNavDropdown">
     <ul class="navbar-nav text-white">
-      <li class="nav-item active">
+      <li class="nav-item active ">
         <a class="nav-link text-white " href="#"
-          >Home <span class="sr-only">(current)</span></a
+          >Home<span class="sr-only">(current)</span></a
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#">A Empresa</a>
+        <a class="nav-link text-white" href="#">Empresa</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white" href="#">Sobre</a>
@@ -29,32 +40,18 @@
       <li class="nav-item">
         <a class="nav-link text-white" href="#">Contato</a>
       </li>
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle "
-          href="#"
-          id="navbarDropdownMenuLink"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Dropdown link
+    </ul>
+    <div>
+      <div class="nav-item">
+        <a class="btn btn-outline my-2 my-sm-0 text-white col-9" href="#"
+          >Registre-se
         </a>
-        <div
-          class="dropdown-menu text-white"
-          aria-labelledby="navbarDropdownMenuLink"
-        >
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-outline-white btn-outline" href="#"
+      </div>
+      <div>
+        <a class="btn btn-outline-light my-2 my-sm-0 col" href="#"
           ><i class="fa fa-user"></i> Login
         </a>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </nav>
