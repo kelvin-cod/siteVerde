@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header.component.html'
 })
 export class HeaderComponent implements OnInit {
+  private Empresa = '../../menu/empresa/empresa.component.html';
+  private Home = '../../menu/home/home.component.html';
 
-  constructor() { }
+  constructor(private router: Router) {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  empresa() {
+    this.router.navigate([this.Empresa, this.Home]);
   }
-
 }

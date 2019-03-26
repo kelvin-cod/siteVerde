@@ -2,7 +2,7 @@
   class="navbar navbar-expand-lg
   navbar-light bg-success
   text-white navbar-inverse
-  fixed-top"
+  fixed-top  py-3"
 >
   <a class="navbar-brand text-white" href="#">
     Verde
@@ -24,34 +24,40 @@
   >
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse " id="navbarNavDropdown">
-    <ul class="navbar-nav text-white">
+  <div class="collapse navbar-collapse mynav " id="navbarNavDropdown">
+    <ul class="navbar-nav text-white container">
       <li class="nav-item active ">
-        <a class="nav-link text-white " href="#"
+        <a
+          class="nav-link text-white "
+          routerLinkActive="active"
+          [routerLink]="['home']"
           >Home<span class="sr-only">(current)</span></a
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#">Empresa</a>
+        <a
+          class="nav-link text-white"
+          routerLinkActive="active"
+          [routerLink]="['empresa']"
+          >Empresa</a
+        >
       </li>
       <li class="nav-item">
         <a class="nav-link text-white" href="#">Sobre</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link text-white" href="#">Galeria</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link text-white" href="#">Contato</a>
       </li>
     </ul>
-    <div>
-      <div class="nav-item">
-        <a class="btn btn-outline my-2 my-sm-0 text-white col-9" href="#"
-          >Registre-se
-        </a>
-      </div>
-      <div>
-        <a class="btn btn-outline-light my-2 my-sm-0 col" href="#"
-          ><i class="fa fa-user"></i> Login
-        </a>
-      </div>
+
+    <div class="nav-item col-7 col-md-2">
+      <a class="btn btn-outline  text-white" href="#">Registre-se </a>
+      <a class="btn btn-light  text-dark" href="#"
+        ><i class="fa fa-user"></i> Login
+      </a>
     </div>
   </div>
 </nav>

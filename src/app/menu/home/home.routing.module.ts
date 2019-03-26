@@ -1,16 +1,13 @@
-import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EmpresaComponent } from './menu/empresa/empresa.component';
-import { HomeComponent } from './menu/home/home.component';
+
+
+import { NgModule } from '@angular/core';
+import { EmpresaComponent } from '../empresa/empresa.component';
+import { HomeComponent } from './home.component';
 
 const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
-    redirectTo: 'home'
-  },
-  {
-    path: 'home',
     component: HomeComponent,
     data: {
       title: 'Home'
@@ -29,4 +26,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class HomeRoutingModule {}
