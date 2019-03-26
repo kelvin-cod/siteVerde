@@ -1,7 +1,10 @@
+import { ContatoComponent } from './menu/contato/contato.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { EmpresaComponent } from './menu/empresa/empresa.component';
 import { HomeComponent } from './menu/home/home.component';
+import { GaleriaComponent } from './menu/galeria/galeria.component';
+import { LoginComponent } from './user/login/login.component';
 
 const routes: Routes = [
   {
@@ -22,6 +25,21 @@ const routes: Routes = [
     data: {
       title: 'Empresa'
     }
+  },
+  {
+    path: 'galeria',
+    component: GaleriaComponent,
+    data: {
+      title: 'Galeria'
+    }
+  },
+  {
+    path: 'contato',
+    component: ContatoComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   }
 ];
 

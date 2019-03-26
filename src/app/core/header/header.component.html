@@ -4,7 +4,11 @@
   text-white navbar-inverse
   fixed-top  py-3"
 >
-  <a class="navbar-brand text-white" href="#">
+  <a
+    class="navbar-brand text-white"
+    routerLinkActive="active"
+    [routerLink]="['home']"
+  >
     Verde
     <img
       src="../../../assets/tree.png"
@@ -26,7 +30,7 @@
   </button>
   <div class="collapse navbar-collapse mynav " id="navbarNavDropdown">
     <ul class="navbar-nav text-white container">
-      <li class="nav-item active ">
+      <li class="nav-item active">
         <a
           class="nav-link text-white "
           routerLinkActive="active"
@@ -46,16 +50,29 @@
         <a class="nav-link text-white" href="#">Sobre</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#">Galeria</a>
+        <a
+          class="nav-link text-white"
+          routerLinkActive="active"
+          [routerLink]="['galeria']"
+          >Galeria</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#">Contato</a>
+        <a
+          class="nav-link text-white"
+          routerLinkActive="active"
+          [routerLink]="['contato']"
+          >Contato</a
+        >
       </li>
     </ul>
 
-    <div class="nav-item col-7 col-md-2">
-      <a class="btn btn-outline  text-white" href="#">Registre-se </a>
-      <a class="btn btn-light  text-dark" href="#"
+    <div class="nav-item col-8 col-md-2">
+      <a class="btn btn-outline text-white" href="#">Registre-se </a>
+      <a
+        class="btn btn-light text-dark"
+        routerLinkActive="active"
+        [routerLink]="['login']"
         ><i class="fa fa-user"></i> Login
       </a>
     </div>
