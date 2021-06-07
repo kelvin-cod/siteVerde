@@ -1,22 +1,10 @@
-<nav
-  class="navbar navbar-expand-lg
+<nav class="navbar navbar-expand-lg
   navbar-light bg-success
   text-white navbar-inverse
-  fixed-top  py-3"
->
-  <a
-    class="navbar-brand text-white"
-    routerLinkActive="active"
-    [routerLink]="['home']"
-  >
+  fixed-top  py-3">
+  <a class="navbar-brand text-white" routerLinkActive="active" [routerLink]="['home']">
     Verde
-    <img
-      src="../../../assets/tree.png"
-      width="30"
-      height="30"
-      class="d-inline-block align-top"
-      alt=""
-  /></a>
+   </a>
   <button
     class="navbar-toggler"
     type="button"
@@ -31,49 +19,27 @@
   <div class="collapse navbar-collapse mynav " id="navbarNavDropdown">
     <ul class="navbar-nav text-white container">
       <li class="nav-item active">
-        <a
-          class="nav-link text-white "
-          routerLinkActive="active"
-          [routerLink]="['home']"
-          >Home<span class="sr-only">(current)</span></a
-        >
+        <a class="nav-link text-white " routerLinkActive="active" [routerLink]="['home']">Home<span
+            class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link text-white"
-          routerLinkActive="active"
-          [routerLink]="['empresa']"
-          >Empresa</a
-        >
+        <a class="nav-link text-white" routerLinkActive="active" [routerLink]="['empresa']">Empresa</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white" href="#">Sobre</a>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link text-white"
-          routerLinkActive="active"
-          [routerLink]="['galeria']"
-          >Galeria</a
-        >
+        <a class="nav-link text-white" routerLinkActive="active" [routerLink]="['galeria']">Galeria</a>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link text-white"
-          routerLinkActive="active"
-          [routerLink]="['contato']"
-          >Contato</a
-        >
+        <a class="nav-link text-white" routerLinkActive="active" [routerLink]="['contato']">Contato</a>
       </li>
     </ul>
 
     <div class="nav-item col-8 col-md-2">
       <a class="btn btn-outline text-white" href="#">Registre-se </a>
-      <a
-        class="btn btn-light text-dark"
-        routerLinkActive="active"
-        [routerLink]="['login']"
-        ><i class="fa fa-user"></i> Login
+      <a class="btn btn-light text-dark" routerLinkActive="active" [routerLink]="['login']"><i class="fa fa-user"></i>
+        Login
       </a>
     </div>
   </div>
